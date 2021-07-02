@@ -70,6 +70,7 @@ const menu = () => {
     //Desafio 5 - Agregando Objetos
 
     class Lana{
+
         constructor(material, presentacion, agujas){
 
             this.material = material;
@@ -78,14 +79,20 @@ const menu = () => {
 
         }
 
+        datosLana(){
+            return "Datos del producto  "
+        }
+
     }
         //Objetos
 
     const Lana1 = new Lana ("100% Acrílico", "Ovillo de 200 grs", "7/8");
     const Lana2 = new Lana ("100 % Acrílico" , "Ovillo de 100 grs", "5/6");
-    const Lana3 = new Lana ("75% Acrílico, 25% Lana", "Ovillo de 250 grs", "8/9")
+    const Lana3 = new Lana ("75% Acrílico, 25% Lana", "Ovillo de 250 grs", "8/9");
+    const Lana4 = new Lana ("100% Lana", "Madeja por 500 grs", "8/9")
 
     console.log(Lana1);
     console.log(Lana2);
     console.log(Lana3);
+    console.log(Lana4);
             
