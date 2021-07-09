@@ -87,8 +87,8 @@ const menu = () => {
         //Objetos
 
     const lana1 = new Lana ("100% Acrílico", "Ovillo de 200 grs", "7/8");
-    const lana2 = new Lana ("100% Acrílico" , "Ovillo de 100 grs", "5/6");
-    const lana3 = new Lana ("75% Acrílico, 25% Lana", "Ovillo de 250 grs", "8/9");
+    const lana2 = new Lana ("100% Acrílico" , "Ovillo de 500 grs", "5/6");
+    const lana3 = new Lana ("75% Acrílico, 25% Lana", "Ovillo de 500 grs", "8/9");
     const lana4 = new Lana ("100% Lana", "Madeja por 500 grs", "8/9")
 
     //Array
@@ -96,9 +96,14 @@ const menu = () => {
     const productos = [lana1, lana2, lana3, lana4];
     
     // filtro para mostrar solamente las lanas compuestas de acrilico
-    
+
     const acrilicas = productos.filter(Lana => Lana.material == ("100% Acrílico"));
     console.log(acrilicas);
+
+    //filtro para mostrar solamente las lanas en ovillo de 500 grs
+
+    const qgrs = productos.filter(Lana => Lana.presentacion == ("Ovillo de 500 grs"));
+    console.log(qgrs);
 
    
             
