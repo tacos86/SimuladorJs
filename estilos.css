@@ -1,6 +1,7 @@
 body {
     background-color: #f7e8d4;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: bold;
 }
 
 header{
@@ -27,4 +28,40 @@ h2 {
     color: slategrey;
     text-align: center;
         
+}
+
+main{
+    margin-left: 15px;
+}
+
+h3{
+    border-bottom: solid 1px salmon;
+
+}
+    
+
+ul {
+    list-style: none;
+}
+
+form{
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: #d5adc8;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+ 
+}
+
+label{
+    margin-bottom: 100px;
+   
+}
+
+
+input[type=text],
+input[type=text]:focus {
+
+    color: rgba(72, 0, 105, 0.562);
+    border: none;
+    background:  rgb(245, 234, 242);
 }
