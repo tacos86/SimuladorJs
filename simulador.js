@@ -2,7 +2,7 @@ alert("Bienvenidos a Lanas del Rey");
 
 const menu = () => {
     // Variable del menú
-    let colorDeLana = prompt (`¿Qué color de lana desea llevar hoy?:
+    colorDeLana = prompt (`¿Qué color de lana desea llevar hoy?:
     * Rojo
     * Azul
     * Verde
@@ -105,5 +105,14 @@ const menu = () => {
     const qgrs = productos.filter(Lana => Lana.presentacion == ("Ovillo de 500 grs"));
     console.log(qgrs);
 
-   
-            
+
+//DESAFIO 8 - MANIPULANDO EL DOM
+
+//Crear parrafo donde va a decir el pedido completo
+let parrafo = document.createElement("p");
+// Insertar el parrofo en el HTML
+parrafo.innerHTML = document.write("Estas llevando ") + document.write(cantidad) + (document.write(" ovillos de lana color ")) + document.write(colorDeLana) + document.write(" y el valor total de tu compra es de $ ") + document.write(precioTotal);
+
+
+
+

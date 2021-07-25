@@ -1,0 +1,30 @@
+body {
+    background-color: #f7e8d4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    width: auto;
+    height: 200px;
+    background-color: #d5adc8;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: white;
+    
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    color: slategrey;
+    text-align: center;
+        
+}
