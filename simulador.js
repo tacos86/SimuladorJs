@@ -1,13 +1,25 @@
-alert("Bienvenidos a Lanas del Rey");
+//alert("Bienvenidos a Lanas del Rey");
 
-const menu = () => {
+let colorDeLana = document.getElementById("colorEscrito");
+
+function mostrar() {
+    console.log(colorDeLana);
+    
+}
+
+mostrar();
+
+colorDeLana.addEventListener("submit",mostrar);
+
+
+/*const menu = () => {
     // Variable del menú
     colorDeLana = prompt (`¿Qué color de lana desea llevar hoy?:
     * Rojo
     * Azul
     * Verde
     * Amarillo
-    * Marrón`);
+    * Marrón`);*/
     
     
     switch (colorDeLana) {
@@ -50,9 +62,9 @@ const menu = () => {
             );
             break;
     }
-    };
     
-    menu (); //Final de la variable del menú
+    
+    /*menu (); //Final de la variable del menú
     
     // Variable del pedido
     let cantidad = prompt ("¿Cuántos ovillos desea llevar?");
@@ -112,7 +124,3 @@ const menu = () => {
 let parrafo = document.createElement("p");
 // Insertar el parrofo en el HTML
 parrafo.innerHTML = document.write("Estas llevando ") + document.write(cantidad) + (document.write(" ovillos de lana color ")) + document.write(colorDeLana) + document.write(" y el valor total de tu compra es de $ ") + document.write(precioTotal);
-
-
-
-
