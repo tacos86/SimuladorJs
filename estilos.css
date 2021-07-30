@@ -10,6 +10,7 @@ header{
     background-color: #d5adc8;
     background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
     margin-bottom: 40px;
+    border-radius: 25px;
 }
 
 h1 {
@@ -49,6 +50,7 @@ form{
     padding: 15px;
     background-color: #d5adc8;
     background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    border-radius: 25px;
  
 }
 
@@ -57,11 +59,22 @@ label{
    
 }
 
-
-input[type=text],
-input[type=text]:focus {
-
-    color: rgba(72, 0, 105, 0.562);
-    border: none;
-    background:  rgb(245, 234, 242);
+input {
+    height: 30px;
+    margin-top: 10px;
+    
 }
+
+button{
+    margin: 20px 20px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #d5adc8;
+    border: solid 1px #d5adc8;
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+   
+
+}
+
