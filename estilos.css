@@ -1,3 +1,4 @@
+
 body {
     background-color: #f7e8d4;
     font-family: 'Thasadith', sans-serif;
@@ -5,29 +6,33 @@ body {
 }
 
 header{
+    
     width: auto;
-    height: 200px;
+    height: 300px;
     background-color: #d5adc8;
-    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    background:url("./multimedia/portada.jpg");
     margin-bottom: 40px;
     border-radius: 25px;
 }
 
 h1 {
-    font-size: 3rem;
+    margin: 15px;
+    padding: 0px 15px;
+    font-size: 5rem;
     font-weight: lighter;
     font-family: 'Pacifico', cursive;
-    text-align: center;
-    color: white;
+    text-align: left;
+    color: #BF046B;
     
 }
 
 h2 {
     font-size: 1.5rem;
-    font-family: 'Pacifico', cursive;
-    font-weight: lighter;
-    color: slategrey;
-    text-align: center;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: bold;
+    color: #00AF9F;
+    text-align: left;
+    margin-left: 100px;
         
 }
 
@@ -36,11 +41,14 @@ main{
 }
 
 h3{
-    border-bottom: solid 1px salmon;
+    border-bottom: solid 1px #00AF9F;
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    color: rgb(46, 46, 46);
+    font-size: 1.6rem;
 
 }
     
-
 ul {
     list-style: none;
 }
@@ -48,8 +56,8 @@ ul {
 form{
     margin: 15px 0px;
     padding: 15px;
-    background-color: #d5adc8;
-    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    background-color: #00AF9F;
+    
     border-radius: 25px;
  
 }
@@ -69,12 +77,41 @@ button{
     margin: 20px 20px;
     padding: 15px;
     border-radius: 20px;
-    background-color: #d5adc8;
-    border: solid 1px #d5adc8;
+    background-color: white;
+    border: dashed 3px #F59EA7;
     font-family: 'Pacifico', cursive;
     font-size: 1rem;
-    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    
    
+}
 
+footer{
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #BF046B;
+    border-radius: 20px;
+}
+
+.textoFotter{
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 1.5rem;
+    color: #f7e8d4;
+}
+
+
+.nuestrasLanas{
+    padding: 10px;
+    background-color: #BF046B;
+    border-radius: 20px;
+}
+
+.lanasDisponibles{
+    margin-top: 20px;
+    padding: 10px;
+    border: dashed 1px #BF046B;
+    border-radius: 20px;
+    
 }
 

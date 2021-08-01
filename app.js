@@ -1,12 +1,13 @@
+//VARIABLES
 const colorElegido = document.querySelector('.color');
- 
+const cantidadElegida = document.querySelector('.cantidad');
+
+//EVENTOS
 colorElegido.addEventListener('change', e => {
     e.preventDefault();
     mostrarColor = colorElegido.color.value;
     console.log(mostrarColor);
 });
-
-const cantidadElegida = document.querySelector('.cantidad');
  
 cantidadElegida.addEventListener('change', e => {
     e.preventDefault();
@@ -15,10 +16,12 @@ cantidadElegida.addEventListener('change', e => {
     precio = mostrarCantidad * 140;
 });
 
-
+//MOSTRAR EL PEDIDO
 
 let enviarPedido = document.querySelector('#pedido');
 enviarPedido.addEventListener('click', mostrarPedido);
+
+//FUNCION PARA MOSTRAR EL PEDIDO
 
 function mostrarPedido(e){
   e.target.removeEventListener(e.type, mostrarPedido)
@@ -28,12 +31,16 @@ function mostrarPedido(e){
   const span = document.getElementById("span");
   span.insertBefore(parrafo,enviarPedido);
 
+  //FORMATO DEL CARTEL QUE APARECE CON EL PEDIDO
+
   enviarPedido.style.display = 'none'
-  parrafo.style.backgroundImage = 'linear-gradient(315deg, #d5adc8 0%, #ff8489 74%)'
+  parrafo.style.backgroundColor = '#F59EA7'
   parrafo.style.borderRadius = '25px'
   parrafo.style.fontSize = '1.5rem'
   parrafo.style.padding = '1rem'
   parrafo.style.textAlign = 'center'
-  parrafo.style.width = '500px'
+  parrafo.style.fontFamily = "'Thasadith', sans-serif;"
+  parrafo.style.height = '50px'
+  parrafo.style.verticalAlign = "center"
 }
 

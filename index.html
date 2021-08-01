@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <title>Lanas del Rey</title>
 </head>
+
 <body>
     <header>
         <h1 id="titulo">Lanas del Rey </h1>
         <h2>Las lanas más suaves del condado</h2>
     </header>
     <main>
-    
+        <div>
+            <section class="nuestrasLanas">
+                <h3>Nuestras Lanas</h3>
+                <p>
+                    Todas nuestras lanas se encuentran realizadas con los más altos niveles de calidad. <br> La
+                    presentación es por ovillos de 300 grs y cada ovillo tiene un valor $ 140. Consultenos precio por
+                    mayor.
+                </p>
+            </section>
+        </div>
+        <section class="lanasDisponibles">
+            <h3>Lanas Disponibles</h3>
+            <p> Actualmente tenemos en stock los siguientes colores:
+                <ul id="lista">
+                    <li>Rojo</li>
+                    <li>Azul</li>
+                    <li>Verde</li>
+                    <li>Amarillo</li>
+                    <li>Violeta</li>
+                </ul>
 
-        <h3>Lanas Disponibles</h3>
-        <p> Actualmente tenemos en stock los siguientes colores:
-            <ul id="lista">
-                <li>Rojo</li>
-                <li>Azul</li>
-                <li>Verde</li>
-                <li>Amarillo</li>
-                <li>Violeta</li>
-            </ul>
-        
-        
-        </p>
+            </p>
+        </section>
         <form class="color">
             <label>Ingrese el color elegido</label> <br>
             <input name="color" type="text" autocomplete="off">
@@ -40,17 +51,18 @@
             <input name="cantidad" type="number" autocomplete="off">
         </form>
         <span id="span"><button id="pedido">Enviar pedido</button></span>
-        
-        
-        
-    </main> 
 
-    
+    </main>
+    <footer>
+        <p class="textoFotter"> - Haciendo las mejores lanas desde 1986 - </p>
+    </footer>
+
 
 
 
 
     <script src="app.js"></script>
-    
+
 </body>
+
 </html>
