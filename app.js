@@ -1,6 +1,29 @@
-let color = document.getElementById("color");
-let cantidad = document.getElementById("cantidad");
-console.log(cantidad)
+const colorElegido = document.querySelector('.color');
+ 
+colorElegido.addEventListener('submit', e => {
+    e.preventDefault();
+    const mostrarColor = colorElegido.color.value;
+    console.log(mostrarColor);
+});
+
+const cantidadElegida = document.querySelector('.cantidad');
+ 
+cantidadElegida.addEventListener('submit', e => {
+    e.preventDefault();
+    const mostrarCantidad = cantidadElegida.cantidad.value;
+    console.log(mostrarCantidad);
+});
+
+
+
+
+
+
+
+
+
+
+
 
 let boton = document.getElementById("boton");
 boton.addEventListener("click", desplegarTexto);
