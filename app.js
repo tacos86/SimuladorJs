@@ -1,20 +1,25 @@
 const colorElegido = document.querySelector('.color');
  
-colorElegido.addEventListener('submit', e => {
+colorElegido.addEventListener('change', e => {
     e.preventDefault();
-    const mostrarColor = colorElegido.color.value;
+    mostrarColor = colorElegido.color.value;
     console.log(mostrarColor);
 });
 
 const cantidadElegida = document.querySelector('.cantidad');
  
-cantidadElegida.addEventListener('submit', e => {
+cantidadElegida.addEventListener('change', e => {
     e.preventDefault();
-    const mostrarCantidad = cantidadElegida.cantidad.value;
+    mostrarCantidad = cantidadElegida.cantidad.value;
     console.log(mostrarCantidad);
 });
 
+let enviarPedido = document.querySelector('#pedido');
+enviarPedido.addEventListener('click', mostrarPedido);
 
+function mostrarPedido(){
+  console.log('tu pedido es ' + mostrarCantidad + " ovillos de lana color " + mostrarColor);
+}
 
 
 
