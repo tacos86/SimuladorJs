@@ -12,43 +12,28 @@ cantidadElegida.addEventListener('change', e => {
     e.preventDefault();
     mostrarCantidad = cantidadElegida.cantidad.value;
     console.log(mostrarCantidad);
+    precio = mostrarCantidad * 140;
 });
+
+
 
 let enviarPedido = document.querySelector('#pedido');
 enviarPedido.addEventListener('click', mostrarPedido);
 
-function mostrarPedido(){
-  console.log('tu pedido es ' + mostrarCantidad + " ovillos de lana color " + mostrarColor);
+function mostrarPedido(e){
+  e.target.removeEventListener(e.type, mostrarPedido)
+  const parrafo = document.createElement("p");
+  const pedido = document.createTextNode("Tu pedido: " + mostrarCantidad + " ovillos de lana color " + mostrarColor + ". El valor total es de $ " + precio);
+  parrafo.appendChild(pedido);  
+  const span = document.getElementById("span");
+  span.insertBefore(parrafo,enviarPedido);
+
+  enviarPedido.style.display = 'none'
+  parrafo.style.backgroundImage = 'linear-gradient(315deg, #d5adc8 0%, #ff8489 74%)'
+  parrafo.style.borderRadius = '25px'
+  parrafo.style.fontSize = '1.5rem'
+  parrafo.style.padding = '1rem'
+  parrafo.style.textAlign = 'center'
+  parrafo.style.width = '500px'
 }
-
-
-
-
-
-
-
-
-
-
-let boton = document.getElementById("boton");
-boton.addEventListener("click", desplegarTexto);
-
-function desplegarTexto(e) {
-  e.target.removeEventListener(e.type, desplegarTexto);
-  let texto = document.createElement("p");
-  texto.innerHTML = 'Todas nuestras lanas son 100% acrílicas y estan realizadas con los más altos niveles de calidad. <br> Todas se venden en madejas de 500 grs o en ovillos de 200 grs. <br> Hacemos envíos en CABA y GBA.'
-  document.body.appendChild(texto);
-
-  texto.style.textAlign = "center";
-    
-}
-
-
-
-
- 
-
-
-
-
 
