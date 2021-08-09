@@ -44,3 +44,16 @@ function mostrarPedido(e){
   parrafo.style.verticalAlign = "center"
 }
 
+
+//Desafio 12 - Agregar JQUERY
+
+$( document ).ready(function() 
+{
+   alert( "Bienvenidos a Lanas del Rey")});
+
+
+   $("ul").append('<button id="btnMas">Ver más..</button>');   
+
+   $("#btnMas").click(function(){
+    $("ul").append("<p>Todas las lanas son 100% acrílicas</p>");
+  });
